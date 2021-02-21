@@ -1,0 +1,45 @@
+<!-- /*
+============================================
+; Assignment 8.2 – Server-side Communications
+; Author: Dan Ross
+; Date: 20 Feb 2021
+; Modified By: Dan Ross
+; Description: This file contains all the HTML code used by the component to display itself.
+;===========================================
+*/ -->
+<!-- Start our navigation here.  -->
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row>
+    <div class="logo">
+      <img src="./assets/In-N-Out books Logo.png" height="80" alt="" />
+    </div>
+    <div style="width: 80%">
+      <div fxLayout="row wrap" fxLayoutAlign="end start">
+        <button mat-button routerLink="/book-list">Book List</button>
+        <button mat-button routerLink="/wishlist">Wishlist</button>
+        <button mat-button routerLink="/contact">Contact</button>
+        <button mat-button routerLink="/about">About</button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<!-- End our navigation here. -->
+<br />
+<!-- We're using Angular Flex Layouts -->
+<!-- Start our main container here.  -->
+<div fxLayout="row wrap">
+  <div fxFlex>
+    <mat-card class="main-container">
+      <mat-card-title class="blue">
+        <!-- THis will show our title we defined in the AppComponent class  -->
+        {{ assignment }}
+      </mat-card-title>
+      <br>
+      <br>
+      <mat-card-content>
+        <!-- The Router Outlet shows the HTML code for the active component -->
+        <router-outlet></router-outlet>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div><!-- End our main container here.  -->

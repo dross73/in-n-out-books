@@ -1,0 +1,36 @@
+<!-- /*
+============================================
+; Assignment 8.2 – Server-side Communications
+; Author: Dan Ross
+; Date: 20 Feb 2021
+; Modified By: Dan Ross
+; Description: This is the 'book-list' HTML.
+;===========================================
+*/ -->
+<!-- Display a spinner when our books array has a 0 count.  -->
+<ng-container *ngIf="books.length === 0">
+  <mat-spinner></mat-spinner>
+</ng-container>
+<!-- When the books array has at least one object, show the cards.   -->
+<div *ngIf="books.length > 0">
+  <!-- We are using the {books.length} to set the number of books we have in our favorites list.  -->
+  <h2 class="green">Top {{ books.length }} Favorite Books</h2>
+  <div class="grid-container">
+    <!-- Loop over the books array -->
+    <ng-container *ngFor="let book of books">
+      <mat-card>
+        <mat-card-title>
+          <a class="grid-container__ahref blue" (click)="showBookDetails(book.isbn)" >{{ book.title }}</a >
+        </mat-card-title>
+        <mat-card-content>
+          <!-- Show the list of books including ISBN, Number of pages, and author(s). -->
+          <mat-list>
+            <mat-list-item>ISBN: {{ book.isbn }}</mat-list-item>
+            <mat-list-item>Pages: {{ book.numOfPages }}</mat-list-item>
+            <mat-list-item>Authors: {{ book.authors.join(',') }}</mat-list-item>
+          </mat-list>
+        </mat-card-content>
+      </mat-card>
+    </ng-container>
+  </div>
+</div>

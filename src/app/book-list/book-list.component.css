@@ -1,0 +1,43 @@
+/*
+============================================
+; Assignment 8.2 – Server-side Communications
+; Author: Dan Ross
+; Date: 20 Feb 2021
+; Modified By: Dan Ross
+; Description: This is our book-list CSS style sheet.
+;===========================================
+*/
+.a-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+.a-link:hover {
+  text-decoration: underline;
+}
+/* Using CSS grid we are going to create rows of 3 mat-cards  */
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding: 25px;
+}
+
+.grid-container__item {
+  padding: 20px;
+  font-size: 30px;
+}
+
+.grid-container__ahref {
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 30px;
+}
+
+.grid-container__ahref:hover {
+  text-decoration: underline;
+}
+
+.spinner {
+  margin-top: 2%;
+  margin-left: 45%;
+}

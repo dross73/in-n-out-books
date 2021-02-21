@@ -1,0 +1,31 @@
+<!-- /*
+============================================
+; Assignment 8.2 – Server-side Communications
+; Author: Dan Ross
+; Date: 20 Feb 2021
+; Modified By: Dan Ross
+; Description: This is the 'wishlist' component HTML page.
+;===========================================
+*/ -->
+
+<div fxLayout="column">
+  <!-- Call our wishlist create component. This will display wishlist items submitted by the user. -->
+  <app-wishlist-create fxFlex (addItemEmitter)="updateItemsHandler($event)">
+  </app-wishlist-create>
+  <br />
+  <br />
+  <div>
+    <!-- If there are a list of items then output the results.  -->
+    <mat-list fxFlex *ngIf="items && items.length > 0">
+      <mat-list-item *ngFor="let item of items">
+        <div mat-line>Title: {{ item.title }}</div>
+        <div mat-line>Authors: {{ item.authors }}</div>
+      </mat-list-item>
+    </mat-list>
+    <!-- This will display if there are no items in the array.  -->
+    <div fxFlex *ngIf="!items || items.length === 0">
+      <h2 style="text-align: center;">Your wishlist is empty.</h2>
+    </div>
+
+  </div>
+</div>

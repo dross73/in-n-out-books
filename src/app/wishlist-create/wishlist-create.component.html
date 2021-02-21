@@ -1,0 +1,25 @@
+<!-- /*
+============================================
+; Assignment 8.2 – Server-side Communications
+; Author: Dan Ross
+; Date: 20 Feb 2021
+; Modified By: Dan Ross
+; Description: This is the 'wishlist-create' HTML page.
+;===========================================
+*/ -->
+
+<form fxLayout="column" class="wishlist-create-form">
+  <mat-form-field fxFlex appearance="fill">
+    <mat-label>Title</mat-label>
+    <!-- This is an ngModel field so we can capture the values from the form.  -->
+    <input type="text" name="title" matInput [(ngModel)]="item.title" />
+  </mat-form-field>
+
+  <mat-form-field fxFlex appearance="fill">
+    <mat-label>Authors</mat-label>
+    <!-- This is an ngModel field so we can capture the values from the form.  -->
+    <input type="text" name="authors" matInput [(ngModel)]="item.authors" />
+  </mat-form-field>
+  <!-- This button contains a click event that will run our addItem function from wishlist-create-component.ts -->
+  <button mat-button color="primary" (click)="addItem()">Add Item</button>
+</form>

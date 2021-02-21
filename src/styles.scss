@@ -1,0 +1,43 @@
+/*
+============================================
+; Assignment 8.2 – Server-side Communications
+; Author: Dan Ross
+; Date: 20 Feb 2021
+; Modified By: Dan Ross
+; Description: This is our style sheet where we can add global styles
+;===========================================
+*/
+
+@import "./theme";
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.blue {
+  color: #2196f3;
+}
+.green {
+  color: #66bb6a;
+}
+.attribution-link {
+  text-decoration: none;
+  color: white;
+}
+.attribution-link:hover {
+  text-decoration: underline;
+}
+.card-title-icon {
+  text-align: center;
+}
+.card-title-icon, .mat-icon {
+  font-size: 72px;
+}
+.align-center {
+  text-align: center;
+}
