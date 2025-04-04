@@ -1,79 +1,67 @@
-# In-N-Out Books 📚
+# In-N-Out-Books
 
-An Angular application for managing a collection of books, ideal for learning and practicing Angular concepts like components, services, routing, forms, and HTTP integration.
-
----
-
-## 🚀 Features
-
-- View a list of books with details
-- Add, edit, and delete book entries
-- Search functionality
-- Component-driven UI
-- Built-in Angular form validation
-- Organized folder structure for scalability
+A simple Angular application demonstrating Angular routing, layout components, and basic UI structure for a fictional book inventory system. This app was developed for learning purposes as part of an academic assignment.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Live Site
 
-- [Angular](https://angular.io/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [RxJS](https://rxjs.dev/)
-- [Bootstrap](https://getbootstrap.com/) (for styling)
+🔗 [https://dross73.github.io/in-n-out-books/](https://dross73.github.io/in-n-out-books/)
+
+> ⚠️ **Note:** This app is hosted on GitHub Pages. There may be a brief delay (a few seconds) if the site has not been accessed recently, due to GitHub Pages cold-loading behavior.
 
 ---
 
-## 📦 Installation
+## 📚 Features
 
-### 1. Clone the repository
+- Landing page
+- Contact us form
+- About page
+- Header and footer layout
+- Static navigation (no backend)
+
+---
+
+## 🧰 Tech Stack
+
+- Angular (v10+)
+- TypeScript
+- HTML/CSS
+- Angular CLI
+
+---
+
+## 📦 Development
+
+### Serve Locally
 
 ```bash
-git clone https://github.com/dross73/in-n-out-books.git
-cd in-n-out-books
+ng serve
 ```
 
-### 2. Install dependencies
+Navigate to `http://localhost:4200/`. The app will auto-reload on file changes.
+
+### Build for Production
 
 ```bash
-npm install
+ng build --configuration production --base-href /in-n-out-books/
 ```
 
 ---
 
-## ▶️ Running the App
+## 🌐 Deployment
 
-If you're using Node.js 17+ or 20+ and get OpenSSL errors, run this command in **PowerShell**:
-
-```powershell
-$env:NODE_OPTIONS="--openssl-legacy-provider"; ng serve
-```
-
-Then open your browser to:  
-👉 [http://localhost:4200](http://localhost:4200)
-
----
-
-## 🧪 Running Unit Tests
+This app is deployed via GitHub Pages using:
 
 ```bash
-ng test
+npx angular-cli-ghpages --dir=dist/in-n-out-books
 ```
 
----
-
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+This command pushes the build to the `gh-pages` branch which GitHub Pages serves automatically.
 
 ---
 
-## 📄 License
+## ✨ Author
 
-This project is licensed under the MIT License.
-
----
-
-## ✍️ Author
-
-Created by [dross73](https://github.com/dross73)
+Dan Ross  
+[GitHub](https://github.com/dross73)
